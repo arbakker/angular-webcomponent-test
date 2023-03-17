@@ -1,27 +1,24 @@
-# WebComponents
+# README
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+See https://indepth.dev/posts/1116/angular-web-components-a-complete-guide.
 
-## Development server
+Build webcomponent with:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```
+ng build FirstWebComponent
+```
 
-## Code scaffolding
+Then embed in html with:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```html
+<html>
+  <head>
+    <script src="./polyfills.679e1b6e39790569.js"></script>
+    <script src="./runtime.53686c3b24a21c8a.js"></script>
+    <script src="./main.2da89b5d5d3cad6d.js"></script>
+  </head>
+  <body>
+    <ui-button test-data="blabla"></ui-button>
+  </body>
+</html>
+```
